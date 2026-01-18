@@ -3,7 +3,7 @@ defmodule DesafioMagalu.Scheduler.Notification do
 
   import Ecto.Changeset
 
-  @fields [:destination, :send_at, :message, :status, :type]
+  @fields [:destination, :send_at, :message, :type]
 
   @primary_key {:id, :binary_id, autogenerate: true}
   schema "notifications" do

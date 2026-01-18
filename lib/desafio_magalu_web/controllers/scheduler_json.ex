@@ -3,7 +3,7 @@ defmodule DesafioMagaluWeb.SchedulerJSON do
 
   def show(%{notification: notification}) do
     %{
-      data: status(notification)
+      data: data_out(notification)
     }
   end
 
