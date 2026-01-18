@@ -7,6 +7,10 @@ defmodule DesafioMagaluWeb.Router do
 
   scope "/api", DesafioMagaluWeb do
     pipe_through :api
+
+    get "/notifications/:id", SchedulerController, :show
+    delete "/notifications/:id", SchedulerController, :delete
+    post "/notifications", SchedulerController, :create
   end
 
   # Enable LiveDashboard and Swoosh mailbox preview in development
